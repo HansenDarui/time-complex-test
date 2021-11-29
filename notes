@@ -1,0 +1,30 @@
+Results for the extraLargeArray
+    insert 761.516458 ms
+    append 1.7235 ms
+
+Results for the tinyArray
+    insert 19.917 μs
+    append 63.292 μs
+
+Results for the smallArray
+    insert 27.542 μs
+    append 63.709 μs
+
+Results for the mediumArray
+    insert 154.25 μs
+    append 97.5 μs
+
+Results for the largeArray
+    insert 7.647292 ms
+    append 507.834 μs
+
+Results for the extraLargeArray
+    insert 765.836209 ms
+    append 2.486083 ms
+
+analyze:
+    the append function is much faster and scales a whole lot better than the intert function. 
+    insert uses unshift while append uses push which is a much better way of doing things
+
+extra credit: from what I've read unshift has to increment every single element that is already in the array making it slower especially as the array grows.
+ While push can just insert something into the end of an array. 
